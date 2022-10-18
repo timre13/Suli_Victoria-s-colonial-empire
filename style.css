@@ -1,0 +1,10 @@
+/* body {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb7%2F22%2Fa4%2Fb722a49f8a50e60f68e0b4444c0b4dd9.jpg&f=1&nofb=1&ipt=151457c16efee25c6c28b1b4e61d227968bb93ebc3b5a1c8b7649f8181976681&ipo=images);
+    background-repeat: repeat-y;
+    background-size: contain;
+} */
+
+body {
+    background-color: black;
+    color: rgb(193, 193, 193);
+}
