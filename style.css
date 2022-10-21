@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: hsl(240, 100%, 95%);
     color: hsl(0, 78%, 0%);
@@ -18,7 +22,8 @@ body {
 
 #title {
     position: relative;
-    height: 6.5rem;
+    height: fit-content;
+    padding: 1.8rem;
     font-size: 2.0rem;
     display: grid;
     place-items: center;
@@ -29,21 +34,41 @@ body {
     position: sticky;
     top: 0;
     width: 100%;
-    height: 2.6rem;
+    min-height: 2.6rem;
+    max-height: fit-content;
     background-color: hsl(0, 88%, 29%);
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 2rem 0 2rem;
+    z-index: 2;
+}
+
+.header-item {
+    color: white;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.header-item:hover {
+    background-color: rgba(200, 0, 0, 0.4);
 }
 
 .full-height-header {
-    min-height: calc(100vh - (2.6rem + 6.5rem));
+    min-height: calc(100vh - (2.6rem*2 + 6.5rem)) !important;
 }
 
 .full-height {
-    min-height: 100vh;
+    min-height: calc(100vh - 2.6rem);
     max-height: fit-content;
 }
 
 .intro {
-    display: grid;
     place-items: center;
     padding: 5rem;
     font-size: 2rem;
@@ -55,4 +80,19 @@ ul {
 
 h2 {
     color: hsl(0, 67%, 15%);
+}
+
+section::before {
+    content: "";
+    height: 2.6rem;
+    width: 100%;
+    display: block;
+}
+
+section {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
 }
