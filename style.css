@@ -95,4 +95,37 @@ section {
     text-align: justify;
 }
 
+p {
+    line-height: 1.6rem;
+}
+
+#intro-text {
+    animation: gentle-flow 1s;
+    z-index: 0;
+}
+
+@keyframes gentle-flow {
+    0% {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes not-so-gentle-flow {
+    0% {
+        opacity: 0;
+        transform: rotateZ(1440deg) scale(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateZ(0deg) scale(100%);
+    }
+}
+
+.animated {
+    animation: not-so-gentle-flow 1s;
 }
