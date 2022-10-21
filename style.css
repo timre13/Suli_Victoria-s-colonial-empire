@@ -52,3 +52,7 @@ body {
 ul {
     padding-left: 20px;
 }
+
+h2 {
+    color: hsl(0, 67%, 15%);
+}
