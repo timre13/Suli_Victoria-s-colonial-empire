@@ -72,6 +72,10 @@ body {
     /*transition: 100ms background-color;*/
 }
 
+.header-item.active {
+    text-decoration: underline;
+}
+
 .header-item:hover {
     background-color: rgba(200, 0, 0, 0.4);
 }
