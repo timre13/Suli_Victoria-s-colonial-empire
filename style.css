@@ -6,6 +6,19 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-color: hsl(0, 88%, 29%) hsl(0, 67%, 15%);
+}
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 88%, 29%);
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(0, 67%, 15%);
 }
 
 body {
