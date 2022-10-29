@@ -68,10 +68,26 @@ body {
     max-height: fit-content;
 }
 
-.intro {
+#intro {
     place-items: center;
     padding: 5rem;
     font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#intro div {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+#intro-text {
+    animation: gentle-flow-from-bottom 1s;
+    z-index: 0;
+    height: 100%;
+    transform: translateY(-2.6rem);
 }
 
 ul {
