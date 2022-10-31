@@ -155,7 +155,14 @@ h2 {
     gap: 0.5rem;
 }
 
-#history {
+/* #history {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+} */
+
+.full-height {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -171,6 +178,21 @@ h2 {
     float:right;
     max-width: 40%;
     width: 25rem;
+}
+
+.image-left {
+    display: block;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+    max-width: 40%;
+    width: 20rem;
+}
+
+.image-left.animated {
+    animation: gentle-flow-from-left 1s;
 }
 
 .image-right img {
@@ -201,6 +223,17 @@ h2 {
     0% {
         opacity: 0;
         transform: translateX(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes gentle-flow-from-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-10%);
     }
     100% {
         opacity: 1;
