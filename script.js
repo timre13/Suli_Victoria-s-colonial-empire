@@ -1,5 +1,6 @@
 let imgs = document.getElementsByClassName("animated-img");
-let sections = document.querySelectorAll("section")
+let sections = document.querySelectorAll("section");
+let uls = document.querySelectorAll("ul[class='animate']");
 
 const obs = new IntersectionObserver((entries, obs) => {
     entries.forEach((entry) => {
@@ -38,4 +39,20 @@ for (let img of imgs) {
 
 for (let section of sections) {
     sectObs.observe(section)
+}
+
+const ulObs = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            let ul = entry.target;
+            for (i=0; i < ul.children.length; ++i) {
+                ul.children[i].style.animationDelay = `${i*100+300}ms`;
+                ul.children[i].style.animationPlayState = "running";
+            }
+        }
+    });
+});
+
+for (let ul of uls) {
+    ulObs.observe(ul);
 }
