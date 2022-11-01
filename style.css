@@ -43,6 +43,7 @@ body {
     place-items: center;
     background-color: hsl(0, 67%, 15%);
     color: hsl(0, 0%, 92%);
+    z-index: 3;
 }
 
 .header {
@@ -290,22 +291,22 @@ h2 {
 
 @keyframes slide-in-from-top {
     0% {
-        z-index: -1;
+        z-index: 1;
         transform: translateY(-100%);
     }
     100% {
-        z-index: -1;
+        z-index: 1;
         transform: translateY(0%);
     }
 }
 
 @keyframes slide-away {
     0% {
-        z-index: -1;
+        z-index: 1;
         transform: translateY(0);
     }
     100% {
-        z-index: -1;
+        z-index: 1;
         transform: translateY(-100%);
     }
 }
