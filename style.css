@@ -282,6 +282,10 @@ h2 {
     flex: 1 0;
 }
 
+#literature p {
+    margin-bottom: 0.8rem;
+}
+
 @keyframes gentle-flow-from-bottom {
     0% {
         opacity: 0;
