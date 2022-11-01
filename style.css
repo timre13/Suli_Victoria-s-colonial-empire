@@ -244,12 +244,14 @@ h2 {
     animation: gentle-flow-from-left 1s;
 }
 
-.image-right img {
+.image-right img,
+.image-left img {
     width: 100%;
     transition: 200ms box-shadow;
 }
 
-.image-right img:hover {
+.image-right img:hover,
+.image-left img:hover {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
