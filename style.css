@@ -259,6 +259,29 @@ h2 {
     animation: gentle-flow-from-right 1s;
 }
 
+.colonies {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+}
+
+.colonies .image {
+    flex: 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colonies .image .image-right {
+    max-width: 70%;
+    width: 50rem;
+}
+
+.colonies ul {
+    flex: 1 0;
+}
+
 @keyframes gentle-flow-from-bottom {
     0% {
         opacity: 0;
@@ -331,6 +354,12 @@ h2 {
     }
     #header {
         display: none;
+    }
+    .colonies {
+        flex-direction: column;
+    }
+    .colonies .image {
+        width: 100%;
     }
 }
 
